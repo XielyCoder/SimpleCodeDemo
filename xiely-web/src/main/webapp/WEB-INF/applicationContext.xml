@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:tx="http://www.springframework.org/schema/tx"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/context
+        http://www.springframework.org/schema/context/spring-context-4.3.xsd
+        http://www.springframework.org/schema/aop
+        http://www.springframework.org/schema/aop/spring-aop-4.3.xsd
+        http://www.springframework.org/schema/tx
+        http://www.springframework.org/schema/tx/spring-tx-4.3.xsd">
+
+    <!--1 引入属性文件，在配置中占位使用 -->
+    <context:property-placeholder location="classpath*:*db.properties"/>
+
+    <!--2 配置C3P0数据源 -->
+    <bean id="datasource" class="com.mchange.v2.c3p0.ComboPooledDataSource" destroy-method="close">
+        <!--驱动类名 -->
+        <property name="driverClass" value="${jdbc.driver}"/>
+        <!-- url -->
+        <property name="jdbcUrl" value="${jdbc.url}"/>
+        <!-- 用户名 -->
+        <property name="user" value="${jdbc.username}"/>
+        <!-- 密码 -->
+        <property name="password" value="${jdbc.password}"/>
+        <!-- 当连接池中的连接耗尽的时候c3p0一次同时获取的连接数  -->
+        <property name="acquireIncrement" value="5"/>
+        <!-- 初始连接池大小 -->
+        <property name="initialPoolSize" value="10"/>
+        <!-- 连接池中连接最小个数 -->
+        <property name="minPoolSize" value="5"/>
+        <!-- 连接池中连接最大个数 -->
+        <property name="maxPoolSize" value="20"/>
+    </bean>
+
+    <!--3 会话工厂bean sqlSessionFactoryBean -->
+    <bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
+        <!-- 数据源 -->
+        <property name="dataSource" ref="datasource"/>
+        <!-- 别名 -->
+        <property name="typeAliasesPackage" value="com.xiely.web.sql.entities"/>
+        <!-- sql映射文件路径 -->
+        <property name="mapperLocations" value="com\xiely\web\sql\mapper\*.xml"/>
+    </bean>
+
+    <!--4 自动扫描对象关系映射 -->
+    <bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
+        <!--指定会话工厂，如果当前上下文中只定义了一个则该属性可省去 -->
+        <property name="sqlSessionFactoryBeanName" value="sqlSessionFactory"/>
+        <!-- 指定要自动扫描接口的基础包，实现接口 -->
+        <property name="basePackage" value="com.xiely.web.sql.mapper"/>
+    </bean>
+
+    <!--5 声明式事务管理 -->
+    <!--定义事物管理器，由spring管理事务 -->
+    <bean id="transactionManager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
+        <property name="dataSource" ref="datasource"/>
+    </bean>
+
+    <bean id="springContextHolder" class="com.xiely.web.utils.SpringContextHolder"/>
+
+    <!-- jedis cluster config -->
+    <bean name="genericObjectPoolConfig" class="org.apache.commons.pool2.impl.GenericObjectPoolConfig">
+        <property name="maxWaitMillis" value="-1"/>
+        <property name="maxTotal" value="1000"/>
+        <property name="minIdle" value="8"/>
+        <property name="maxIdle" value="100"/>
+    </bean>
+
+    <bean id="jedisCluster" class="com.xiely.web.utils.JedisClusterFactory">
+        <property name="addressConfig" value="classpath:redis-config.properties"/>
+        <property name="addressKeyPrefix" value="address"/>
+        <property name="timeout" value="300000"/>
+        <property name="maxAttempts" value="6"/>
+        <property name="genericObjectPoolConfig" ref="genericObjectPoolConfig"/>
+    </bean>
+
+    <!--支持注解驱动的事务管理，指定事务管理器 -->
+    <tx:annotation-driven/>
+
+    <!--6 容器自动扫描IOC组件  -->
+    <context:component-scan base-package="com.xiely.web.service"/>
+
+    <!--7 aspectj支持自动代理实现AOP功能 -->
+    <aop:aspectj-autoproxy proxy-target-class="true"/>
+</beans>
