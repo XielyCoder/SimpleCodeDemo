@@ -11,18 +11,19 @@ public class ZKDistributeCyclicBarrier
 {
     private ZkClient zkClient;
 
-    private String defaultBarrierRootNode;
-
     private String barrier;
+
+    private String condition;
 
     private ZKDistributeImproveLock zkDistributeLock;
 
     public ZKDistributeCyclicBarrier(int parties)
     {
-        defaultBarrierRootNode = String.format("/barrierCondition_%s", parties);
-        barrier = defaultBarrierRootNode + "/barrier";
+        String defaultBarrierRootNode = String.format("/barrierCondition_%s", parties);
         zkClient = ClientProxy.getZkClient();
         ClientProxy.createPersistentIfNotExist(defaultBarrierRootNode, String.valueOf(parties));
+        barrier = defaultBarrierRootNode + "/barrier";
+        condition = zkClient.readData(defaultBarrierRootNode);
         zkDistributeLock = new ZKDistributeImproveLock(defaultBarrierRootNode + "/lock");
     }
 
@@ -44,8 +45,8 @@ public class ZKDistributeCyclicBarrier
                     zkClient.createPersistentSequential(barrier + "/", "condition");
                     if (satisfyConditions())
                     {
-                        //满足条件删除栅栏。
                         System.out.println("====================人数到齐，会议开始。");
+                        //满足条件释放栅栏。
                         zkClient.deleteRecursive(barrier);
                         //释放栅栏的，不需要阻塞。
                         lastOne = true;
@@ -62,11 +63,7 @@ public class ZKDistributeCyclicBarrier
                     System.out.println(num + "发言。");
                     break;
                 }
-                else
-                {
-                    System.out.println(num + "会议室被占用。");
-                    zkDistributeLock.unlock();
-                }
+                zkDistributeLock.unlock();
             }
         }
         finally
@@ -93,7 +90,6 @@ public class ZKDistributeCyclicBarrier
     private boolean satisfyConditions()
     {
         ClientProxy.createPersistentIfNotExist(barrier, "");
-        String condition = zkClient.readData(defaultBarrierRootNode);
         return StringUtils.equals(String.valueOf(zkClient.countChildren(barrier)), condition);
     }
 }

@@ -2,32 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="afa4db8a-1eb8-4ba6-b5b6-b9fdc7c62cbe" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/59403.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/xiely.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/xiely-web/src/main/java/com/xiely/web/sql/mapper/BookDAO.xml" beforeDir="false" afterPath="$PROJECT_DIR$/xiely-web/src/main/java/com/xiely/web/sql/mapper/BookDAO.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/xiely-web/src/main/java/com/xiely/web/utils/zk/barrier/ZKDistributeCyclicBarrier.java" beforeDir="false" afterPath="$PROJECT_DIR$/xiely-web/src/main/java/com/xiely/web/utils/zk/barrier/ZKDistributeCyclicBarrier.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xiely-web/src/main/java/com/xiely/web/utils/zk/barrier/ZKDistributeCyclicBarrierTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/xiely-web/src/main/java/com/xiely/web/utils/zk/barrier/ZKDistributeCyclicBarrierTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xiely-web/src/main/java/com/xiely/web/utils/zk/listener/ZKCyclicBarrierListener.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/xiely-web/src/main/java/com/xiely/web/utils/zk/listener/ZKLockListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/xiely-web/src/main/java/com/xiely/web/utils/zk/listener/ZKDeleteBlockingListener.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xiely-web/src/main/java/com/xiely/web/utils/zk/lock/ZKDistributeImproveLock.java" beforeDir="false" afterPath="$PROJECT_DIR$/xiely-web/src/main/java/com/xiely/web/utils/zk/lock/ZKDistributeImproveLock.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xiely-web/src/main/resources/applicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/xiely-web/src/main/java/resources/applicationContext.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xiely-web/src/main/resources/db.properties" beforeDir="false" afterPath="$PROJECT_DIR$/xiely-web/src/main/java/resources/db.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xiely-web/src/main/resources/web.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/xiely-web/src/main/webapp/WEB-INF/applicationContext.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/xiely-web/src/main/webapp/WEB-INF/db.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/xiely-web/src/main/webapp/WEB-INF/redis-config.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/xiely-web/src/main/webapp/WEB-INF/spring-servlet.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/xiely-web/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/xiely-web/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xiely-web/src/test/java/com/xiely/web/service/BookServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/xiely-web/src/test/java/com/xiely/web/service/BookServiceTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xiely-web/src/test/java/com/xiely/web/utils/JedisTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/xiely-web/src/test/java/com/xiely/web/utils/JedisTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xiely.iml" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/xiely-thinking-in-java/target/" />
@@ -78,8 +54,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/xiely-web/src/main/java/com/xiely/web/utils/zk/barrier/ZKDistributeCyclicBarrier.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="147">
-              <caret line="76" selection-start-line="76" selection-end-line="76" />
+            <state relative-caret-position="375">
+              <caret line="48" column="32" selection-start-line="48" selection-start-column="32" selection-end-line="48" selection-end-column="32" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -90,7 +66,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/xiely-web/src/main/java/com/xiely/web/utils/zk/lock/ZKDistributeImproveLock.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-114">
+            <state relative-caret-position="114">
               <caret line="15" selection-start-line="15" selection-end-line="15" />
             </state>
           </provider>
@@ -100,7 +76,7 @@
         <entry file="file://$PROJECT_DIR$/xiely-web/src/main/java/com/xiely/web/utils/zk/listener/ZKDeleteBlockingListener.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="76">
-              <caret line="6" column="21" lean-forward="true" selection-start-line="6" selection-start-column="21" selection-end-line="6" selection-end-column="21" />
+              <caret line="6" column="21" selection-start-line="6" selection-start-column="21" selection-end-line="6" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -108,8 +84,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/xiely-web/src/main/java/com/xiely/web/utils/zk/barrier/ZKDistributeCyclicBarrierTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="17" column="55" selection-start-line="17" selection-start-column="55" selection-end-line="17" selection-end-column="55" />
+            <state relative-caret-position="171">
+              <caret line="9" column="17" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
             </state>
           </provider>
         </entry>
@@ -129,10 +105,10 @@
         <option value="$PROJECT_DIR$/xiely-web/src/main/java/resources/applicationContext.xml" />
         <option value="$PROJECT_DIR$/xiely-web/src/main/java/com/xiely/web/sql/mapper/BookDAO.xml" />
         <option value="$PROJECT_DIR$/xiely-web/src/main/java/com/xiely/web/utils/zk/listener/ZKCyclicBarrierListener.java" />
-        <option value="$PROJECT_DIR$/xiely-web/src/main/java/com/xiely/web/utils/zk/barrier/ZKDistributeCyclicBarrierTest.java" />
         <option value="$PROJECT_DIR$/xiely-web/src/main/java/com/xiely/web/utils/zk/listener/ZKLockListener.java" />
         <option value="$PROJECT_DIR$/xiely-web/src/main/java/com/xiely/web/utils/zk/listener/ZKDeleteBlockingListener.java" />
         <option value="$PROJECT_DIR$/xiely-web/src/main/java/com/xiely/web/utils/zk/lock/ZKDistributeImproveLock.java" />
+        <option value="$PROJECT_DIR$/xiely-web/src/main/java/com/xiely/web/utils/zk/barrier/ZKDistributeCyclicBarrierTest.java" />
         <option value="$PROJECT_DIR$/xiely-web/src/main/java/com/xiely/web/utils/zk/barrier/ZKDistributeCyclicBarrier.java" />
       </list>
     </option>
@@ -222,65 +198,6 @@
               <item name="web" type="462c0819:PsiDirectoryNode" />
               <item name="utils" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="xiely" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SimpleCodeDemo" type="462c0819:PsiDirectoryNode" />
-              <item name="xiely-web" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="utils" type="462c0819:PsiDirectoryNode" />
-              <item name="zk" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="xiely" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SimpleCodeDemo" type="462c0819:PsiDirectoryNode" />
-              <item name="xiely-web" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="utils" type="462c0819:PsiDirectoryNode" />
-              <item name="zk" type="462c0819:PsiDirectoryNode" />
-              <item name="barrier" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="xiely" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SimpleCodeDemo" type="462c0819:PsiDirectoryNode" />
-              <item name="xiely-web" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="utils" type="462c0819:PsiDirectoryNode" />
-              <item name="zk" type="462c0819:PsiDirectoryNode" />
-              <item name="exception" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="xiely" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SimpleCodeDemo" type="462c0819:PsiDirectoryNode" />
-              <item name="xiely-web" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="utils" type="462c0819:PsiDirectoryNode" />
-              <item name="zk" type="462c0819:PsiDirectoryNode" />
-              <item name="listener" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="xiely" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SimpleCodeDemo" type="462c0819:PsiDirectoryNode" />
-              <item name="xiely-web" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="utils" type="462c0819:PsiDirectoryNode" />
-              <item name="zk" type="462c0819:PsiDirectoryNode" />
-              <item name="lock" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -368,8 +285,23 @@
       <workItem from="1555254092780" duration="708000" />
       <workItem from="1555326365120" duration="2552000" />
       <workItem from="1555328952355" duration="248000" />
-      <workItem from="1555329462824" duration="6896000" />
+      <workItem from="1555329462824" duration="8573000" />
     </task>
+    <task id="LOCAL-00001" summary="【谢灵运】新idea的xml整改，分布式栅栏优化。">
+      <created>1555336620666</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1555336620666</updated>
+    </task>
+    <task id="LOCAL-00002" summary="【谢灵运】【ZK】分布式栅栏测试方法优化下">
+      <created>1555337444851</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1555337444851</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -393,13 +325,13 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="10404000" />
+    <option name="totallyTimeSpent" value="12081000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20149253" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20149253" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -410,7 +342,7 @@
       <window_info anchor="bottom" id="Messages" weight="0.329718" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.329718" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.329718" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.329718" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3991323" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -435,6 +367,11 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="【谢灵运】新idea的xml整改，分布式栅栏优化。" />
+    <MESSAGE value="【谢灵运】【ZK】分布式栅栏测试方法优化下" />
+    <option name="LAST_COMMIT_MESSAGE" value="【谢灵运】【ZK】分布式栅栏测试方法优化下" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/xiely-web/src/main/webapp/WEB-INF/spring-servlet.xml" />
@@ -512,13 +449,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/xiely-web/src/main/java/com/xiely/web/utils/zk/barrier/ZKDistributeCyclicBarrierTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="17" column="55" selection-start-line="17" selection-start-column="55" selection-end-line="17" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/xiely-web/src/main/java/com/xiely/web/utils/zk/listener/ZKCyclicBarrierListener.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="152">
@@ -526,24 +456,31 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/xiely-web/src/main/java/com/xiely/web/utils/zk/listener/ZKDeleteBlockingListener.java">
+    <entry file="file://$PROJECT_DIR$/xiely-web/src/main/java/com/xiely/web/utils/zk/lock/ZKDistributeImproveLock.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="6" column="21" lean-forward="true" selection-start-line="6" selection-start-column="21" selection-end-line="6" selection-end-column="21" />
+        <state relative-caret-position="114">
+          <caret line="15" selection-start-line="15" selection-end-line="15" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/xiely-web/src/main/java/com/xiely/web/utils/zk/lock/ZKDistributeImproveLock.java">
+    <entry file="file://$PROJECT_DIR$/xiely-web/src/main/java/com/xiely/web/utils/zk/listener/ZKDeleteBlockingListener.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-114">
-          <caret line="15" selection-start-line="15" selection-end-line="15" />
+        <state relative-caret-position="76">
+          <caret line="6" column="21" selection-start-line="6" selection-start-column="21" selection-end-line="6" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xiely-web/src/main/java/com/xiely/web/utils/zk/barrier/ZKDistributeCyclicBarrierTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="9" column="17" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/xiely-web/src/main/java/com/xiely/web/utils/zk/barrier/ZKDistributeCyclicBarrier.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="147">
-          <caret line="76" selection-start-line="76" selection-end-line="76" />
+        <state relative-caret-position="375">
+          <caret line="48" column="32" selection-start-line="48" selection-start-column="32" selection-end-line="48" selection-end-column="32" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
