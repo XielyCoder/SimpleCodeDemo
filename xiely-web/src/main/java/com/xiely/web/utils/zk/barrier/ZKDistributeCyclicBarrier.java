@@ -37,7 +37,6 @@ public class ZKDistributeCyclicBarrier
             //当前条件未进入队列阻塞。
             while (true)
             {
-                //获取分布式锁，修改条件。
                 zkDistributeLock.lock();
                 if (!satisfyConditions())
                 {
@@ -51,19 +50,14 @@ public class ZKDistributeCyclicBarrier
                         //释放栅栏的，不需要阻塞。
                         lastOne = true;
                     }
-                    //修改成功后释放锁。
-                    zkDistributeLock.unlock();
-                    if (!lastOne)
-                    {
-                        //栅栏存在阻塞。
-                        waitBarrier();
-                    }
-
+                    //阻塞处理。
+                    dowait(lastOne);
                     //条件满足开始执行。
                     System.out.println(num + "发言。");
                     break;
                 }
-                //非人为情况不会走到该分支。
+                //满足条件释放栅栏，非人为情况不会走到该分支。
+                zkClient.deleteRecursive(barrier);
                 zkDistributeLock.unlock();
             }
         }
@@ -73,19 +67,21 @@ public class ZKDistributeCyclicBarrier
         }
     }
 
-    private void waitBarrier()
+    private void dowait(boolean lastOne)
     {
-        // 注册watcher
-        ZKDeleteBlockingListener listener = new ZKDeleteBlockingListener();
-        zkClient.subscribeDataChanges(barrier, listener);
-
-        // 自己阻塞
-        if (this.zkClient.exists(barrier))
+        if (!lastOne)
         {
-            listener.waitCountDownLatch();
+            ZKDeleteBlockingListener listener = new ZKDeleteBlockingListener(zkClient, barrier);
+            zkClient.subscribeDataChanges(barrier, listener);
+            //监听开始后&阻塞前释放锁，以保证监听开始前barrier不会被删除，不会因为阻塞导致锁不释放。
+            zkDistributeLock.unlock();
+            listener.dowait();
+            zkClient.unsubscribeDataChanges(barrier, listener);
         }
-        // 醒来后，取消watcher
-        zkClient.unsubscribeDataChanges(barrier, listener);
+        else
+        {
+            zkDistributeLock.unlock();
+        }
     }
 
     private boolean satisfyConditions()

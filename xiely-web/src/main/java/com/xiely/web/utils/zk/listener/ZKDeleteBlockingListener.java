@@ -1,12 +1,23 @@
 package com.xiely.web.utils.zk.listener;
 
 import org.I0Itec.zkclient.IZkDataListener;
+import org.I0Itec.zkclient.ZkClient;
 
 import java.util.concurrent.CountDownLatch;
 
 public class ZKDeleteBlockingListener implements IZkDataListener
 {
     private CountDownLatch countDownLatch = new CountDownLatch(1);
+
+    private ZkClient zkClient;
+
+    private String localPath;
+
+    public ZKDeleteBlockingListener(ZkClient zkClient, String lockPath)
+    {
+        this.zkClient = zkClient;
+        this.localPath = lockPath;
+    }
 
     @Override
     public void handleDataChange(String s, Object o)
@@ -20,15 +31,25 @@ public class ZKDeleteBlockingListener implements IZkDataListener
         countDownLatch.countDown();
     }
 
-    public void waitCountDownLatch()
+    public void awaitLock()
     {
-        try
+        zkClient.subscribeDataChanges(localPath, this);
+        dowait();
+        zkClient.unsubscribeDataChanges(localPath, this);
+    }
+
+    public void dowait()
+    {
+        if (this.zkClient.exists(localPath))
         {
-            countDownLatch.await();
-        }
-        catch (InterruptedException e)
-        {
-            e.printStackTrace();
+            try
+            {
+                countDownLatch.await();
+            }
+            catch (InterruptedException e)
+            {
+                e.printStackTrace();
+            }
         }
     }
 }

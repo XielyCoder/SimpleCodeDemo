@@ -1,22 +1,21 @@
 package com.xiely.web.utils.zk.lock;
 
-import org.I0Itec.zkclient.IZkDataListener;
 import org.I0Itec.zkclient.ZkClient;
 import org.I0Itec.zkclient.exception.ZkNodeExistsException;
 
-import java.util.concurrent.CountDownLatch;
 import java.util.concurrent.TimeUnit;
 import java.util.concurrent.locks.Condition;
 import java.util.concurrent.locks.Lock;
 
 import com.xiely.web.utils.zk.ClientProxy;
+import com.xiely.web.utils.zk.listener.ZKDeleteBlockingListener;
 
 public class ZKDistributeLock implements Lock
 {
 
     private String lockPath;
 
-    private ZkClient client;
+    private ZkClient zkClient;
 
     public ZKDistributeLock(String lockPath)
     {
@@ -26,7 +25,7 @@ public class ZKDistributeLock implements Lock
         }
         this.lockPath = lockPath;
 
-        client = ClientProxy.getZkClient();
+        zkClient = ClientProxy.getZkClient();
     }
 
     @Override
@@ -35,7 +34,7 @@ public class ZKDistributeLock implements Lock
         // 创建节点
         try
         {
-            client.createEphemeral(lockPath);
+            zkClient.createEphemeral(lockPath);
         }
         catch (ZkNodeExistsException e)
         {
@@ -47,63 +46,26 @@ public class ZKDistributeLock implements Lock
     @Override
     public void unlock()
     {
-        client.delete(lockPath);
+        zkClient.delete(lockPath);
     }
 
     @Override
     public void lock()
-    { // 如果获取不到锁，阻塞等待
+    {
+        // 如果获取不到锁，阻塞等待
         if (!tryLock())
         {
             // 没获得锁，阻塞自己
-            waitForLock();
+            new ZKDeleteBlockingListener(zkClient, lockPath).awaitLock();
             // 再次尝试
             lock();
         }
-
-    }
-
-    private void waitForLock()
-    {
-        CountDownLatch cdl = new CountDownLatch(1);
-
-        IZkDataListener listener = new IZkDataListener()
-        {
-            @Override
-            public void handleDataDeleted(String dataPath)
-            {
-                cdl.countDown();
-            }
-
-            @Override
-            public void handleDataChange(String dataPath, Object data)
-            {
-            }
-        };
-
-        client.subscribeDataChanges(lockPath, listener);
-
-        // 阻塞自己
-        if (this.client.exists(lockPath))
-        {
-            try
-            {
-                cdl.await();
-            }
-            catch (InterruptedException e)
-            {
-                e.printStackTrace();
-            }
-        }
-        // 取消注册
-        client.unsubscribeDataChanges(lockPath, listener);
     }
 
     @Override
     public void lockInterruptibly()
     {
         // TODO Auto-generated method stub
-
     }
 
     @Override

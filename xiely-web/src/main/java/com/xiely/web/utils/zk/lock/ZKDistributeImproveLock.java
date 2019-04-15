@@ -43,16 +43,14 @@ public class ZKDistributeImproveLock implements Lock
     @Override
     public boolean tryLock()
     {
-        if (this.currentPath.get() == null || !zkClient.exists(this.currentPath.get()))
+        if (currentPath.get() == null || !zkClient.exists(currentPath.get()))
         {
-            String node = this.zkClient.createEphemeralSequential(lockPath + "/", "locked");
+            String node = zkClient.createEphemeralSequential(lockPath + "/", "locked");
             currentPath.set(node);
             reenterCount.set(0);
         }
-
-        // 获得所有的子
-        List<String> children = this.zkClient.getChildren(lockPath);
-
+        // 获得所有的子节点。
+        List<String> children = zkClient.getChildren(lockPath);
         // 排序list
         Collections.sort(children);
 
@@ -80,26 +78,10 @@ public class ZKDistributeImproveLock implements Lock
         if (!tryLock())
         {
             // 阻塞等待
-            waitForLock();
+            new ZKDeleteBlockingListener(zkClient, beforePath.get()).awaitLock();
             // 再次尝试加锁
             lock();
         }
-    }
-
-    private void waitForLock()
-    {
-        // 注册watcher
-        ZKDeleteBlockingListener listener = new ZKDeleteBlockingListener();
-
-        zkClient.subscribeDataChanges(this.beforePath.get(), listener);
-
-        // 怎么让自己阻塞
-        if (this.zkClient.exists(this.beforePath.get()))
-        {
-            listener.waitCountDownLatch();
-        }
-        // 醒来后，取消watcher
-        zkClient.unsubscribeDataChanges(this.beforePath.get(), listener);
     }
 
     @Override
@@ -112,11 +94,11 @@ public class ZKDistributeImproveLock implements Lock
             return;
         }
         // 删除节点
-        if (this.currentPath.get() != null)
+        if (currentPath.get() != null)
         {
-            this.zkClient.delete(this.currentPath.get());
-            this.currentPath.set(null);
-            this.reenterCount.set(0);
+            zkClient.delete(currentPath.get());
+            currentPath.set(null);
+            reenterCount.set(0);
         }
     }
 

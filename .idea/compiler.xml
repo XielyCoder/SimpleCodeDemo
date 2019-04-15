@@ -6,9 +6,9 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="xiely-thinking-in-java" />
-        <module name="xiely-common-api" />
         <module name="xiely-web" />
+        <module name="xiely-common-api" />
+        <module name="xiely-thinking-in-java" />
       </profile>
     </annotationProcessing>
   </component>
