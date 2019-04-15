@@ -47,12 +47,13 @@ public class ZKDistributeCyclicBarrier
                         //满足条件删除栅栏。
                         System.out.println("====================人数到齐，会议开始。");
                         zkClient.deleteRecursive(barrier);
-                        //释放栅栏的人，不需要阻塞。
+                        //释放栅栏的，不需要阻塞。
                         lastOne = true;
                     }
                     //修改成功后释放锁。
                     zkDistributeLock.unlock();
-                    if (!lastOne){
+                    if (!lastOne)
+                    {
                         //栅栏存在阻塞。
                         waitBarrier();
                     }
