@@ -63,6 +63,7 @@ public class ZKDistributeCyclicBarrier
                     System.out.println(num + "发言。");
                     break;
                 }
+                //非人为情况不会走到该分支。
                 zkDistributeLock.unlock();
             }
         }
