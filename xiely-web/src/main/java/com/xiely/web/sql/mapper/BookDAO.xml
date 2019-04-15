@@ -13,8 +13,7 @@
     </select>
     <!-- 增加 -->
     <insert id="add">
-        insert into books(title, price, publishDate)
-        values(#{title}, #{price}, #{publishDate})
+        insert into books(title, price, publishDate) values(#{title}, #{price}, #{publishDate})
     </insert>
     <!-- 删除 -->
     <delete id="delete">
@@ -22,7 +21,6 @@
     </delete>
     <!-- 更新 -->
     <update id="update">
-        update books set title=#{title}, price=#{price}, publishDate = #{publishDate}
-        where id=#{id}
+        update books set title=#{title}, price=#{price}, publishDate = #{publishDate} where id=#{id}
     </update>
 </mapper>

@@ -4,12 +4,7 @@ import org.junit.BeforeClass;
 import org.junit.Test;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
-import org.springframework.context.support.FileSystemXmlApplicationContext;
 
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.ResultSet;
-import java.sql.Statement;
 import java.util.Date;
 import java.util.List;
 
@@ -25,7 +20,7 @@ public class BookServiceTest
     @BeforeClass
     public static void before()
     {
-        ApplicationContext ctx = new ClassPathXmlApplicationContext("classpath*:applicationContext.xml");
+        ApplicationContext ctx = new ClassPathXmlApplicationContext("classpath*:resources/applicationContext.xml");
         bookservice = ctx.getBean(BookService.class);
     }
 

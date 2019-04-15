@@ -6,15 +6,11 @@ import com.xiely.web.utils.zk.ClientProxy;
 
 public class ZKDistributeCyclicBarrierTest
 {
-
-    private String barrierCondition = "/barrierCondition";
-
-    private String barrier = barrierCondition + "/barrier";
-
     @Test
     public void delete()
     {
-        ClientProxy.getZkClient().deleteRecursive(barrier);
+        String defaultBarrierRootNode = String.format("/barrierCondition_%s", 10);
+        ClientProxy.getZkClient().deleteRecursive(defaultBarrierRootNode);
     }
 
     public static void main(String[] args)

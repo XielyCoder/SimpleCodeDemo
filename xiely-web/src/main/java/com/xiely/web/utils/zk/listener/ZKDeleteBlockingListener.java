@@ -4,7 +4,7 @@ import org.I0Itec.zkclient.IZkDataListener;
 
 import java.util.concurrent.CountDownLatch;
 
-public class ZKLockListener implements IZkDataListener
+public class ZKDeleteBlockingListener implements IZkDataListener
 {
     private CountDownLatch countDownLatch = new CountDownLatch(1);
 
@@ -20,7 +20,7 @@ public class ZKLockListener implements IZkDataListener
         countDownLatch.countDown();
     }
 
-    void waitCountDownLatch()
+    public void waitCountDownLatch()
     {
         try
         {

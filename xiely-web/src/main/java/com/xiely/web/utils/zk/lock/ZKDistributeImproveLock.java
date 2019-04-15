@@ -1,21 +1,18 @@
 package com.xiely.web.utils.zk.lock;
 
-import org.I0Itec.zkclient.IZkDataListener;
 import org.I0Itec.zkclient.ZkClient;
-import org.I0Itec.zkclient.exception.ZkNodeExistsException;
 
 import java.util.Collections;
 import java.util.List;
-import java.util.concurrent.CountDownLatch;
 import java.util.concurrent.TimeUnit;
 import java.util.concurrent.locks.Condition;
 import java.util.concurrent.locks.Lock;
 
 import com.xiely.web.utils.zk.ClientProxy;
+import com.xiely.web.utils.zk.listener.ZKDeleteBlockingListener;
 
 public class ZKDistributeImproveLock implements Lock
 {
-
     /*
      * 利用临时顺序节点来实现分布式锁
      * 获取锁：取排队号（创建自己的临时顺序节点），然后判断自己是否是最小号，如是，则获得锁；不是，则注册前一节点的watcher,阻塞等待
@@ -91,38 +88,15 @@ public class ZKDistributeImproveLock implements Lock
 
     private void waitForLock()
     {
-
-        CountDownLatch cdl = new CountDownLatch(1);
-
         // 注册watcher
-        IZkDataListener listener = new IZkDataListener()
-        {
-
-            @Override
-            public void handleDataDeleted(String dataPath)
-            {
-                cdl.countDown();
-            }
-
-            @Override
-            public void handleDataChange(String dataPath, Object data)
-            {
-            }
-        };
+        ZKDeleteBlockingListener listener = new ZKDeleteBlockingListener();
 
         zkClient.subscribeDataChanges(this.beforePath.get(), listener);
 
         // 怎么让自己阻塞
         if (this.zkClient.exists(this.beforePath.get()))
         {
-            try
-            {
-                cdl.await();
-            }
-            catch (InterruptedException e)
-            {
-                e.printStackTrace();
-            }
+            listener.waitCountDownLatch();
         }
         // 醒来后，取消watcher
         zkClient.unsubscribeDataChanges(this.beforePath.get(), listener);
