@@ -26,6 +26,7 @@ public class BookController
 {
     private static Logger LOG = Logger.getLogger(BookController.class);
 
+    @SuppressWarnings("SpringJavaAutowiredFieldsWarningInspection")
     @Autowired
     BookService bookService;
 

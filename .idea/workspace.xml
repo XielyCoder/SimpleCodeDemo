@@ -1,13 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="xiely-web:war" />
+    </artifacts-to-build>
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="afa4db8a-1eb8-4ba6-b5b6-b9fdc7c62cbe" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xiely-web/src/main/java/com/xiely/web/utils/zk/barrier/ZKDistributeCyclicBarrier.java" beforeDir="false" afterPath="$PROJECT_DIR$/xiely-web/src/main/java/com/xiely/web/utils/zk/barrier/ZKDistributeCyclicBarrier.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xiely-web/src/main/java/com/xiely/web/utils/zk/barrier/ZKDistributeCyclicBarrierTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/xiely-web/src/main/java/com/xiely/web/utils/zk/barrier/ZKDistributeCyclicBarrierTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xiely-web/src/main/java/com/xiely/web/utils/zk/listener/ZKDeleteBlockingListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/xiely-web/src/main/java/com/xiely/web/utils/zk/listener/ZKDeleteBlockingListener.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xiely-web/src/main/java/com/xiely/web/utils/zk/lock/ZKDistributeImproveLock.java" beforeDir="false" afterPath="$PROJECT_DIR$/xiely-web/src/main/java/com/xiely/web/utils/zk/lock/ZKDistributeImproveLock.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xiely-web/src/main/java/com/xiely/web/utils/zk/lock/ZKDistributeLock.java" beforeDir="false" afterPath="$PROJECT_DIR$/xiely-web/src/main/java/com/xiely/web/utils/zk/lock/ZKDistributeLock.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xiely-web/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/xiely-web/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xiely-web/src/main/java/com/xiely/web/controller/BookController.java" beforeDir="false" afterPath="$PROJECT_DIR$/xiely-web/src/main/java/com/xiely/web/controller/BookController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xiely-web/src/main/java/com/xiely/web/service/BookService.java" beforeDir="false" afterPath="$PROJECT_DIR$/xiely-web/src/main/java/com/xiely/web/service/BookService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xiely-web/src/main/java/resources/applicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/xiely-web/src/main/java/resources/applicationContext.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xiely-web/src/main/resources/redis-config.properties" beforeDir="false" afterPath="$PROJECT_DIR$/xiely-web/src/main/java/resources/redis-config.properties" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/xiely-thinking-in-java/target/" />
@@ -56,61 +61,19 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/xiely-web/src/main/java/com/xiely/web/utils/zk/barrier/ZKDistributeCyclicBarrier.java">
+        <entry file="file://$PROJECT_DIR$/xiely-web/src/test/java/com/xiely/web/utils/JedisTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="380">
-              <caret line="52" selection-start-line="52" selection-end-line="52" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/xiely-web/src/main/java/com/xiely/web/utils/zk/listener/ZKDeleteBlockingListener.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="188">
-              <caret line="42" column="17" selection-start-line="42" selection-start-column="17" selection-end-line="42" selection-end-column="17" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/xiely-web/src/main/java/com/xiely/web/utils/zk/lock/ZKDistributeImproveLock.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="139">
-              <caret line="77" column="18" selection-start-line="77" selection-start-column="18" selection-end-line="77" selection-end-column="18" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/xiely-web/src/main/java/com/xiely/web/utils/zk/barrier/ZKDistributeCyclicBarrierTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="399">
-              <caret line="24" column="10" selection-start-line="24" selection-start-column="10" selection-end-line="24" selection-end-column="10" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="209">
+              <caret line="15" column="14" selection-start-line="15" selection-start-column="14" selection-end-line="15" selection-end-column="14" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/xiely-web/src/main/java/com/xiely/web/service/BookService.java">
+        <entry file="file://$PROJECT_DIR$/xiely-web/src/main/java/resources/applicationContext.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="226">
-              <caret line="33" column="47" selection-start-line="33" selection-start-column="39" selection-end-line="33" selection-end-column="47" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/xiely-web/src/main/java/com/xiely/web/sql/entities/Book.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="33">
-              <caret line="20" column="23" lean-forward="true" selection-start-line="20" selection-start-column="23" selection-end-line="20" selection-end-column="23" />
+            <state relative-caret-position="304">
+              <caret line="16" column="53" selection-start-line="16" selection-start-column="53" selection-end-line="16" selection-end-column="53" />
             </state>
           </provider>
         </entry>
@@ -120,6 +83,7 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>this.</find>
+      <find>db.properties</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -131,19 +95,29 @@
         <option value="$PROJECT_DIR$/xiely-web/src/main/webapp/WEB-INF/web.xml" />
         <option value="$PROJECT_DIR$/xiely-web/src/main/resources/applicationContext.xml" />
         <option value="$PROJECT_DIR$/xiely-web/src/main/resources/web.xml" />
-        <option value="$PROJECT_DIR$/xiely-web/src/main/java/com/xiely/web/utils/JedisClusterFactory.java" />
-        <option value="$PROJECT_DIR$/xiely-web/src/main/java/resources/applicationContext.xml" />
         <option value="$PROJECT_DIR$/xiely-web/src/main/java/com/xiely/web/sql/mapper/BookDAO.xml" />
         <option value="$PROJECT_DIR$/xiely-web/src/main/java/com/xiely/web/utils/zk/listener/ZKCyclicBarrierListener.java" />
         <option value="$PROJECT_DIR$/xiely-web/src/main/java/com/xiely/web/utils/zk/listener/ZKLockListener.java" />
         <option value="$PROJECT_DIR$/xiely-web/src/main/java/com/xiely/web/utils/zk/lock/ZKDistributeLock.java" />
         <option value="$PROJECT_DIR$/xiely-web/src/main/java/com/xiely/web/utils/zk/lock/ZKDistributeImproveLock.java" />
-        <option value="$PROJECT_DIR$/xiely-web/src/main/java/com/xiely/web/utils/zk/listener/ZKDeleteBlockingListener.java" />
         <option value="$PROJECT_DIR$/xiely-web/src/main/java/com/xiely/web/utils/zk/barrier/ZKDistributeCyclicBarrier.java" />
         <option value="$PROJECT_DIR$/xiely-web/src/main/java/com/xiely/web/utils/zk/barrier/ZKDistributeCyclicBarrierTest.java" />
+        <option value="$PROJECT_DIR$/xiely-web/src/main/java/com/xiely/web/utils/zk/listener/ZKDeleteBlockingListener.java" />
+        <option value="$PROJECT_DIR$/xiely-web/src/main/java/com/xiely/web/controller/BookController.java" />
         <option value="$PROJECT_DIR$/xiely-web/src/main/java/com/xiely/web/service/BookService.java" />
+        <option value="$PROJECT_DIR$/xiely-web/pom.xml" />
+        <option value="$PROJECT_DIR$/xiely-web/target/classes/resources/applicationContext.xml" />
+        <option value="$PROJECT_DIR$/xiely-web/src/main/java/com/xiely/web/utils/JedisClusterFactory.java" />
+        <option value="$PROJECT_DIR$/xiely-web/src/main/java/resources/applicationContext.xml" />
       </list>
     </option>
+  </component>
+  <component name="LogFilters">
+    <option name="FILTER_ERRORS" value="false" />
+    <option name="FILTER_WARNINGS" value="false" />
+    <option name="FILTER_INFO" value="true" />
+    <option name="FILTER_DEBUG" value="true" />
+    <option name="CUSTOM_FILTER" />
   </component>
   <component name="MavenProjectNavigator">
     <treeState>
@@ -176,7 +150,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -218,7 +191,7 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="xiely" type="b2602c69:ProjectViewProjectNode" />
@@ -226,59 +199,64 @@
               <item name="xiely-web" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="xiely" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SimpleCodeDemo" type="462c0819:PsiDirectoryNode" />
+              <item name="xiely-web" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="xiely" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SimpleCodeDemo" type="462c0819:PsiDirectoryNode" />
+              <item name="xiely-web" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="xiely" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SimpleCodeDemo" type="462c0819:PsiDirectoryNode" />
+              <item name="xiely-web" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="xiely" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SimpleCodeDemo" type="462c0819:PsiDirectoryNode" />
+              <item name="xiely-web" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="xiely" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SimpleCodeDemo" type="462c0819:PsiDirectoryNode" />
+              <item name="xiely-web" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="xiely" type="b2602c69:ProjectViewProjectNode" />
               <item name="SimpleCodeDemo" type="462c0819:PsiDirectoryNode" />
               <item name="xiely-web" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="web" type="462c0819:PsiDirectoryNode" />
               <item name="utils" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="xiely" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SimpleCodeDemo" type="462c0819:PsiDirectoryNode" />
-              <item name="xiely-web" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="utils" type="462c0819:PsiDirectoryNode" />
-              <item name="zk" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="xiely" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SimpleCodeDemo" type="462c0819:PsiDirectoryNode" />
-              <item name="xiely-web" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="utils" type="462c0819:PsiDirectoryNode" />
-              <item name="zk" type="462c0819:PsiDirectoryNode" />
-              <item name="barrier" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="xiely" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SimpleCodeDemo" type="462c0819:PsiDirectoryNode" />
-              <item name="xiely-web" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="utils" type="462c0819:PsiDirectoryNode" />
-              <item name="zk" type="462c0819:PsiDirectoryNode" />
-              <item name="lock" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -290,14 +268,15 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Console Font" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\Code\SimpleCodeDemo\xiely-web\src\main\webapp\WEB-INF" />
+      <recent name="D:\Code\SimpleCodeDemo\xiely-web\target\classes\resources" />
+      <recent name="D:\Code\SimpleCodeDemo\xiely-web\target\classes" />
       <recent name="D:\Code\SimpleCodeDemo\xiely-web\src\main\java\resources" />
-      <recent name="D:\Code\SimpleCodeDemo\xiely-web\src\main\java" />
-      <recent name="D:\Code\SimpleCodeDemo\xiely-web\src\main\java\com\xiely\web\sql\resources" />
+      <recent name="D:\Code\SimpleCodeDemo\xiely-web\src\main\resources" />
+      <recent name="D:\Code\SimpleCodeDemo\xiely-web\src\main\java\com\xiely\web\sql" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -312,7 +291,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.ZKDistributeCyclicBarrierTest">
+  <component name="RunManager" selected="Tomcat Server.Tomcat 9.0.16">
     <configuration name="ZKDistributeCyclicBarrierTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.xiely.web.utils.zk.barrier.ZKDistributeCyclicBarrierTest" />
       <module name="xiely-web" />
@@ -322,6 +301,22 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="JedisTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="xiely-web" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.xiely.web.utils.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.xiely.web.utils" />
+      <option name="MAIN_CLASS_NAME" value="com.xiely.web.utils.JedisTest" />
+      <option name="METHOD_NAME" value="test" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -342,8 +337,151 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Tomcat 9.0.16" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.16" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
+      <option name="COMMON_VM_ARGUMENTS" value=" " />
+      <option name="UPDATING_POLICY" value="restart-server" />
+      <deployment>
+        <artifact name="xiely-web:war">
+          <settings>
+            <option name="CONTEXT_PATH" value="/xiely_web_war" />
+          </settings>
+        </artifact>
+      </deployment>
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="Tomcat_9_0_16_xiely" />
+      </server-settings>
+      <predefined_log_file enabled="true" id="Tomcat" />
+      <predefined_log_file enabled="true" id="Tomcat Catalina" />
+      <predefined_log_file id="Tomcat Manager" />
+      <predefined_log_file id="Tomcat Host Manager" />
+      <predefined_log_file id="Tomcat Localhost Access" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="53665" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="xiely-web:war" />
+        </option>
+      </method>
+    </configuration>
+    <configuration default="true" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.16" ALTERNATIVE_JRE_ENABLED="false">
+      <option name="UPDATING_POLICY" value="restart-server" />
+      <deployment />
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="_xiely" />
+      </server-settings>
+      <predefined_log_file enabled="true" id="Tomcat" />
+      <predefined_log_file enabled="true" id="Tomcat Catalina" />
+      <predefined_log_file id="Tomcat Manager" />
+      <predefined_log_file id="Tomcat Host Manager" />
+      <predefined_log_file id="Tomcat Localhost Access" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="53665" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.ZKDistributeCyclicBarrierTest" />
+      <item itemvalue="JUnit.ZKDistributeCyclicBarrierTest.delete" />
+      <item itemvalue="JUnit.JedisTest.test" />
+      <item itemvalue="Tomcat Server.Tomcat 9.0.16" />
+    </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.JedisTest.test" />
         <item itemvalue="Application.ZKDistributeCyclicBarrierTest" />
         <item itemvalue="JUnit.ZKDistributeCyclicBarrierTest.delete" />
       </list>
@@ -363,6 +501,7 @@
       <workItem from="1555326365120" duration="2552000" />
       <workItem from="1555328952355" duration="248000" />
       <workItem from="1555329462824" duration="11558000" />
+      <workItem from="1555341173277" duration="3056000" />
     </task>
     <task id="LOCAL-00001" summary="【谢灵运】新idea的xml整改，分布式栅栏优化。">
       <created>1555336620666</created>
@@ -392,40 +531,55 @@
       <option name="project" value="LOCAL" />
       <updated>1555338332100</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="【谢灵运】【ZK】分布式栅栏测试方法优化下">
+      <created>1555341422678</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1555341422678</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="ZKDistributeCyclicBarrierTest_delete - 2019.04.15 at 19h 59m 18s.xml">
-      <configuration name="ZKDistributeCyclicBarrierTest.delete" configurationId="JUnit" />
+    <history-entry file="JedisTest_test - 2019.04.15 at 23h 47m 21s.xml">
+      <configuration name="JedisTest.test" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ZKDistributeCyclicBarrierTest_delete - 2019.04.15 at 21h 20m 42s.xml">
-      <configuration name="ZKDistributeCyclicBarrierTest.delete" configurationId="JUnit" />
+    <history-entry file="JedisTest_test - 2019.04.15 at 23h 47m 51s.xml">
+      <configuration name="JedisTest.test" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ZKDistributeCyclicBarrierTest_delete - 2019.04.15 at 21h 20m 58s.xml">
-      <configuration name="ZKDistributeCyclicBarrierTest.delete" configurationId="JUnit" />
+    <history-entry file="JedisTest_test - 2019.04.15 at 23h 48m 21s.xml">
+      <configuration name="JedisTest.test" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ZKDistributeCyclicBarrierTest_delete - 2019.04.15 at 21h 24m 38s.xml">
-      <configuration name="ZKDistributeCyclicBarrierTest.delete" configurationId="JUnit" />
+    <history-entry file="JedisTest_test - 2019.04.15 at 23h 49m 02s.xml">
+      <configuration name="JedisTest.test" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ZKDistributeCyclicBarrierTest_delete - 2019.04.15 at 21h 25m 48s.xml">
-      <configuration name="ZKDistributeCyclicBarrierTest.delete" configurationId="JUnit" />
+    <history-entry file="JedisTest_test - 2019.04.15 at 23h 50m 34s.xml">
+      <configuration name="JedisTest.test" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ZKDistributeCyclicBarrierTest_delete - 2019.04.15 at 21h 49m 09s.xml">
-      <configuration name="ZKDistributeCyclicBarrierTest.delete" configurationId="JUnit" />
+    <history-entry file="JedisTest_test - 2019.04.15 at 23h 52m 59s.xml">
+      <configuration name="JedisTest.test" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ZKDistributeCyclicBarrierTest_delete - 2019.04.15 at 23h 06m 13s.xml">
-      <configuration name="ZKDistributeCyclicBarrierTest.delete" configurationId="JUnit" />
+    <history-entry file="JedisTest_test - 2019.04.15 at 23h 54m 40s.xml">
+      <configuration name="JedisTest.test" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="JedisTest_test - 2019.04.15 at 23h 55m 07s.xml">
+      <configuration name="JedisTest.test" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="JedisTest_test - 2019.04.15 at 23h 56m 39s.xml">
+      <configuration name="JedisTest.test" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="JedisTest_test - 2019.04.15 at 23h 57m 13s.xml">
+      <configuration name="JedisTest.test" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="15066000" />
+    <option name="totallyTimeSpent" value="18122000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20149253" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20362474" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -433,10 +587,10 @@
       <window_info id="UI Designer" order="5" />
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info id="Web" order="7" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" weight="0.329718" />
+      <window_info anchor="bottom" id="Application Servers" weight="0.329718" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.329718" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.329718" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.329718" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3991323" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -448,13 +602,14 @@
       <window_info anchor="bottom" id="Java Enterprise" order="11" />
       <window_info anchor="bottom" id="Database Changes" order="12" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="13" />
+      <window_info anchor="bottom" id="Messages" order="14" weight="0.329718" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Maven" order="3" weight="0.16897655" />
+      <window_info anchor="right" id="Maven" order="3" visible="true" weight="0.16897655" />
       <window_info anchor="right" id="Palette" order="4" />
       <window_info anchor="right" id="Capture Analysis" order="5" />
-      <window_info anchor="right" id="Database" order="6" visible="true" weight="0.15458423" />
+      <window_info anchor="right" id="Database" order="6" weight="0.15458423" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
       <window_info anchor="right" id="Theme Preview" order="8" />
     </layout>
@@ -470,13 +625,6 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/xiely-web/src/main/webapp/WEB-INF/spring-servlet.xml" />
     <entry file="file://$PROJECT_DIR$/xiely-web/src/main/webapp/WEB-INF/redis-config.properties" />
-    <entry file="file://$PROJECT_DIR$/xiely-web/src/main/java/com/xiely/web/utils/JedisClusterFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="812">
-          <caret line="89" selection-start-line="89" selection-end-line="89" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/xiely-web/src/main/java/com.xiely.web.sql.apper.BookDAO.xml" />
     <entry file="file://$PROJECT_DIR$/xiely-web/src/main/webapp/WEB-INF/web.xml">
       <provider selected="true" editor-type-id="text-editor">
@@ -484,16 +632,6 @@
           <caret line="24" column="78" selection-start-line="24" selection-start-column="78" selection-end-line="24" selection-end-column="78" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xiely-web/src/main/java/resources/applicationContext.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="179">
-          <caret line="37" lean-forward="true" selection-start-line="37" selection-end-line="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xiely-web/src/main/resources/redis-config.properties">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/xiely-web/src/main/resources/spring-servlet.xml">
       <provider selected="true" editor-type-id="text-editor" />
@@ -515,13 +653,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/xiely-web/src/main/java/resources/db.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="4" column="28" selection-start-line="4" selection-start-column="28" selection-end-line="4" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/xiely-web/src/main/java/com/xiely/web/utils/zk/exception/IllegalDistributeQueueStateException.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="114">
@@ -536,13 +667,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/xiely-web/src/main/java/com/xiely/web/utils/zk/listener/ZKCyclicBarrierListener.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="10" column="24" selection-start-line="10" selection-start-column="24" selection-end-line="10" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/xiely-web/src/main/java/com/xiely/web/utils/zk/listener/ZKCyclicBarrierListener.java" />
     <entry file="file://$PROJECT_DIR$/xiely-web/src/main/java/com/xiely/web/utils/zk/lock/ZKDistributeLock.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="380">
@@ -550,26 +675,74 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/xiely-web/src/main/java/com/xiely/web/utils/zk/lock/ZKDistributeImproveLock.java">
+    <entry file="file://$PROJECT_DIR$/xiely-web/src/main/java/com/xiely/web/utils/zk/barrier/ZKDistributeCyclicBarrier.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="139">
-          <caret line="77" column="18" selection-start-line="77" selection-start-column="18" selection-end-line="77" selection-end-column="18" />
+        <state relative-caret-position="893">
+          <caret line="52" selection-start-line="52" selection-end-line="52" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/xiely-web/src/main/java/com/xiely/web/utils/zk/listener/ZKDeleteBlockingListener.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="188">
-          <caret line="42" column="17" selection-start-line="42" selection-start-column="17" selection-end-line="42" selection-end-column="17" />
+        <state relative-caret-position="703">
+          <caret line="40" column="17" selection-start-line="40" selection-start-column="17" selection-end-line="40" selection-end-column="17" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/xiely-web/src/main/java/com/xiely/web/utils/zk/barrier/ZKDistributeCyclicBarrier.java">
+    <entry file="file://$PROJECT_DIR$/xiely-web/src/main/java/com/xiely/web/utils/zk/lock/ZKDistributeImproveLock.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="52" selection-start-line="52" selection-end-line="52" />
+        <state relative-caret-position="1292">
+          <caret line="77" column="18" selection-start-line="77" selection-start-column="18" selection-end-line="77" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xiely-web/src/main/java/com/xiely/web/sql/entities/Book.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="20" column="23" selection-start-line="20" selection-start-column="23" selection-end-line="20" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xiely-web/src/main/java/resources/db.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="4" column="28" selection-start-line="4" selection-start-column="28" selection-end-line="4" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xiely-web/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="205" column="44" selection-start-line="205" selection-start-column="44" selection-end-line="205" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/jedis/jedis/2.9.0/jedis-2.9.0.jar!/redis/clients/jedis/JedisClusterScriptingCommands.class">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xiely-web/src/main/java/com/xiely/web/controller/BookController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="38" selection-start-line="38" selection-end-line="38" />
+          <folding>
+            <element signature="e#893#956#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xiely-web/src/main/java/com/xiely/web/service/BookService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-233">
+          <caret line="18" column="10" selection-start-line="18" selection-start-column="10" selection-end-line="18" selection-end-column="10" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#594#595#0" expanded="true" />
+            <element signature="e#640#641#0" expanded="true" />
+            <element signature="e#1420#1421#0" expanded="true" />
+            <element signature="e#1465#1466#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -584,17 +757,44 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/xiely-web/src/main/java/com/xiely/web/sql/entities/Book.java">
+    <entry file="file://$PROJECT_DIR$/xiely-web/target/classes/resources/applicationContext.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="33">
-          <caret line="20" column="23" lean-forward="true" selection-start-line="20" selection-start-column="23" selection-end-line="20" selection-end-column="23" />
+        <state relative-caret-position="375">
+          <caret line="73" column="55" selection-start-line="73" selection-start-column="55" selection-end-line="73" selection-end-column="55" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/xiely-web/src/main/java/com/xiely/web/service/BookService.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/jedis/jedis/2.9.0/jedis-2.9.0.jar!/redis/clients/jedis/JedisCluster.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="226">
-          <caret line="33" column="47" selection-start-line="33" selection-start-column="39" selection-end-line="33" selection-end-column="47" />
+        <state relative-caret-position="95">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xiely-web/src/test/java/com/xiely/web/utils/JedisTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="15" column="14" selection-start-line="15" selection-start-column="14" selection-end-line="15" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xiely-web/src/main/java/com/xiely/web/utils/JedisClusterFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="299">
+          <caret line="59" column="59" lean-forward="true" selection-start-line="59" selection-start-column="59" selection-end-line="59" selection-end-column="59" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xiely-web/src/main/java/resources/redis-config.properties">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xiely-web/src/main/java/resources/applicationContext.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="16" column="53" selection-start-line="16" selection-start-column="53" selection-end-line="16" selection-end-column="53" />
         </state>
       </provider>
     </entry>
