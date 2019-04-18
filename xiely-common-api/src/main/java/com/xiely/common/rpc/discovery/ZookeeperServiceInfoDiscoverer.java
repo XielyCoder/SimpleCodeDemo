@@ -47,8 +47,6 @@ public class ZookeeperServiceInfoDiscoverer implements ServiceInfoDiscoverer {
 	
 	/**
 	 * 加载配置中心中服务资源信息
-	 * @param serviceName
-	 * @return
 	 */
 	public List<ServiceInfo> loadServiceResouces(String serviceName) {
 		String servicePath = centerRootPath + "/"+serviceName+"/service";
